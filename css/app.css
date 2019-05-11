@@ -535,6 +535,10 @@ img.slick-next.slick-arrow:hover, img.slick-prev.slick-arrow:hover {
     color: #ffffff;
     padding: 0.5rem 1.5rem;
     background-color: #dc822e;
+    transition: all 0.3s ease-in-out;
+}
+.tabs .content section a.buy-product:hover{
+    background-color: #AD6523;
 }
 .tabs .content section .card-product{
     padding-top: 0.9375rem;
@@ -753,6 +757,7 @@ img.slick-next.slick-arrow:hover, img.slick-prev.slick-arrow:hover {
 }
 .row.menu-resturant{
     max-width: 82.5rem;
+    margin-bottom: 5%;
 }
 .menu-resturant .tabs .list-for-product{
     max-width: 62.5rem;
@@ -761,8 +766,178 @@ img.slick-next.slick-arrow:hover, img.slick-prev.slick-arrow:hover {
 .tabs .content section .img-product img.sale{
     z-index: 9999;
     position: absolute;
+    height: 50%;
+    top: -10px;
+    right: -10px;
+}
+.tabs .content section .img-product img.recommended{
+    z-index: 9999;
+    position: absolute;
+    height: 50%;
+    top: -9px;
+    right: -12px;
+}
+.menu-resturant .menu-restaurant__link{
+    margin-bottom: 1rem;
+}
+.menu-resturant .menu-restaurant__link a{
+    font-family: 'PTSerifRegular';
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0.5rem 1.5rem;
+    background-color: #dc822e;
+    transition: all 0.3s ease-in-out;
+}
+.menu-resturant .menu-restaurant__link a:hover{
+    background-color: #AD6523;
+}
+.contact-us{
+    position: relative;
+    background-image: url("../images/contact_us.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 5% 0;
+}
+.contact-us::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 555;
+}
+.contact-us h2{
+    position: relative;
+    font-family: 'Quintessential Regular';
+    font-size: 48px;
+    color: #fff;
+    z-index: 600;
+}
+.contact-us p{
+    position: relative;
+    font-family: 'PTSerifRegular';
+    font-size: 18px;
+    color: #8c8b8b;
+    z-index: 600;
+}
+.contact-us form{
+    position: relative;
+    z-index: 600;
+}
+.contact-us .title-about-us{
+    margin: 2rem 0;
+}
+.menu-resturant h1{
+    font-family: 'Quintessential Regular';
+    color: #000;
+    font-size: 48px;
 }
 
+.contact-us input[type='submit'].button:hover {
+    background-color: #AD6523;
+}
 
-
-
+.contact-us input[type='submit'].button {
+    margin: 24px 0 0 0;
+    background-color: #dc822e;
+    font-family: 'PTSerifRegular';
+    font-size: 16px;
+    transition: all 0.3s linear;
+    color: #fff;
+}
+footer{
+    display: block;
+    position: relative;
+    background-color: #302d2d;
+    padding: 5% 0;
+}
+footer .menu .menu-item a{
+    color: #8c8b8b;
+    padding: 0.3rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+footer .menu .menu-item a:hover{
+    color: #dcdbdb;
+}
+footer .about-us{
+    display: block;
+    position: relative;
+    background: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+}
+footer h4.line{
+    font-size: 24px;
+    color: #fff;
+    font-family: 'PTSerifBold';
+}
+footer ul{
+    list-style: none;
+}
+footer .gallery .column{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+footer i.white{
+    color: #fff;
+    float: left;
+    margin-right: 15px;
+}
+footer p{
+    line-height: 1.4;
+}
+footer p, footer a{
+    display: block;
+    position: relative;
+    color: #8c8b8b;
+    height: 100%;
+}
+footer .gallery .column img {
+    width: 100%;
+    height: 75px;
+}
+footer .contact{
+    margin-left: 15%;
+}
+p#back-top{
+    position: fixed;
+    bottom: 0;
+    left: 90%;
+    z-index: 9999;
+}
+.scrollup{
+    position: fixed;
+    bottom: 65px;
+}
+.scrollup img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 100%;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    text-indent: -9999px;
+    background-color: #dc822e;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    transition:1s;
+}
+.scrollup img:hover{
+    background-color: #AD6523;
+}
+.copyright{
+    background-color: #656060;
+}
+.copyright p{
+    font-family: 'PTSerifRegular';
+    font-size: 14px;
+    color: #fff;
+    padding: 5px 0;
+    margin: 0;
+}
