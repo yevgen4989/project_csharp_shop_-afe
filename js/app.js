@@ -1,10 +1,13 @@
 "use strict";
+$(document).foundation();
 
+$('.menu a').on('click', function (e) {
+    e.preventDefault();
+});
 
-
-
-(function ($) {
+$(function () {
     "use strict";
+
 
     $(function () {
         var H;
@@ -45,14 +48,13 @@
     });
 
 
-    $(document).ready(function(){
+    $(document).ready(function () {
         $("#back-top").hide();
         $(function () {
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 120) {
                     $('#back-top').fadeIn();
-                }
-                else {
+                } else {
                     $('#back-top').fadeOut();
                 }
             });
@@ -95,12 +97,18 @@
             speed: 350,
             centerMode: true,
             adaptiveHeight: true,
+            responsive: [
+                {
+                    breakpoint: 1050,
+                    settings: {
+                        arrows: false,
+                    }
+                }
+            ]
 
         });
 
     });
 
 
-
-
-})(jQuery);
+});
