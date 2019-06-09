@@ -423,6 +423,7 @@ img.slick-next.slick-arrow:hover, img.slick-prev.slick-arrow:hover {
 /*}*/
 
 .tabs {
+    background: none;
     /*padding: 50px;*/
     border: 0;
 }
@@ -541,6 +542,10 @@ img.slick-next.slick-arrow:hover, img.slick-prev.slick-arrow:hover {
     background-color: #AD6523;
 }
 .tabs .content section .card-product{
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+}
+.tabs-content .tabs-panel .card-product{
     padding-top: 0.9375rem;
     padding-bottom: 0.9375rem;
 }
@@ -740,7 +745,7 @@ img.slick-next.slick-arrow:hover, img.slick-prev.slick-arrow:hover {
     font-size: 25px;
 }
 .row.menu-resturant{
-    max-width: 82.5rem;
+
     margin-bottom: 5%;
 }
 .menu-resturant .tabs .list-for-product{
