@@ -3729,7 +3729,7 @@ a.thumbnail {
     bottom: 0; }
 
 .row {
-  max-width: 71.5rem;
+  max-width: 64.5rem;
   margin-right: auto;
   margin-left: auto; }
   .row::before, .row::after {

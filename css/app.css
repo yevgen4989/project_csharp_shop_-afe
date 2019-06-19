@@ -20,16 +20,22 @@ body::-webkit-scrollbar {
     width: 100%;
     height: max-content;
     overflow: auto;
-    margin: 30px auto;
+    padding: 5px 0;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: 999;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
 
 }
-
+.header-menu-fixed {
+    position: fixed;
+    background-color: #dc822e;
+}
 .slider {
     height: auto;
     margin: 0;
@@ -78,7 +84,7 @@ body::-webkit-scrollbar {
     left: 0;
     right: 100%;
     bottom: 0;
-    border-bottom: 1px orange solid;
+    border-bottom: 1px #fbc764 solid;
     margin: 0 25px 3px -15px;
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
@@ -106,6 +112,7 @@ body::-webkit-scrollbar {
     overflow: hidden;
     background-color: #302d2d;
     opacity: 0.55;
+    cursor: default;
 }
 
 .slide-info {
@@ -119,6 +126,7 @@ body::-webkit-scrollbar {
     z-index: 990;
     text-align: center;
     margin: 18% 0 19.2% 0;
+    cursor: default;
 }
 
 .social {
@@ -184,8 +192,7 @@ body::-webkit-scrollbar {
     position: relative;
     width: 100%;
     height: auto;
-    background-color: #fbc764;
-    padding: 60px 0;
+    padding: 6rem 0;
 }
 
 #myGallery {
@@ -203,13 +210,17 @@ body::-webkit-scrollbar {
     content: "";
     position: relative;
     z-index: 13;
-    border-bottom: 1px solid orange;
+    border-bottom: 1px solid #dc822e;
     margin: 0 70% 1rem 0;
 }
+.line.persent_20:after {
+    width: 20%;
+}
+
 
 .about-us p {
     font-family: 'PTSerifRegular';
-    font-size: 17px;
+    font-size: inherit;
 }
 
 .about-us a.btn-more {
@@ -231,6 +242,16 @@ body::-webkit-scrollbar {
 .column.padding-0 {
     padding: 0;
 }
+/*.reservation-block{*/
+/*    padding: 16% 10%;*/
+/*}*/
+
+
+.reservation-block {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 5%;
+}
 
 .reservation-block .title-form h3 {
     font-family: 'Quintessential Regular';
@@ -246,8 +267,19 @@ body::-webkit-scrollbar {
     margin: 0 auto 40px;
 }
 
-.block-for-reservation {
+.main-section .block-for-reservation {
     background-color: #302d2d;
+}
+#form-reservation .block-for-reservation{
+    padding: 10%;
+}
+
+#form-reservation .block-for-reservation .reservation-block .title-form h3{
+    color: #000;
+}
+.img-reservation img{
+     height: -webkit-fill-available;
+     width: auto;
 }
 
 .form-reservation input[type='date']::-webkit-input-placeholder,
@@ -306,7 +338,7 @@ body::-webkit-scrollbar {
 
 .form-reservation label {
     font-family: 'PTSerifRegular';
-    font-size: 18px;
+    font-size: 14px;
     color: #656060;
 }
 
@@ -375,12 +407,12 @@ body::-webkit-scrollbar {
 }
 
 .reviews-slider {
-    padding: 80px 0;
+    padding: 10% 0;
 }
 
-.reviews-slider, .slider.reviews {
-    background-color: #fbc764;
-}
+/*.reviews-slider, .slider.reviews {*/
+/*    background-color: #fbc764;*/
+/*}*/
 
 .reviews-slider .reviews .image-reviews {
     margin: 0 42%;
@@ -847,6 +879,9 @@ footer{
     background-color: #302d2d;
     padding: 5% 0;
 }
+footer .menu {
+    margin-top: 1.875rem;
+}
 footer .menu .menu-item a{
     color: #8c8b8b;
     padding: 0.3rem 1rem;
@@ -899,7 +934,7 @@ footer .contact{
 p#back-top{
     position: fixed;
     bottom: 0;
-    left: 85%;
+    left: 90%;
     z-index: 9999;
 }
 .scrollup{
@@ -1011,5 +1046,35 @@ header .off-canvas > .vertical.menu{
     footer .contact {
         margin: 0;
     }
+}
+
+
+.opening-schedule {
+    background-color: #dc822e;
+    border-radius: 2px;
+    padding: 40px 60px;
+}
+
+.opening-info {
+    margin: 0 0 30px;
+}
+.opening-info > h4, .help-line > h4 {
+    font-family: "PTSerifRegular";
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.opening-info > p, .help-line > p {
+    font-family: "PTSerifRegular";
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.block-for-reservation .large-7.column.padding-0.form-reserv{
+    display: table;
+    height: -webkit-fill-available;
 }
 
